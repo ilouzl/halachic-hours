@@ -1,0 +1,6 @@
+{
+  "name": "מחשבון שעות זמניות",
+  "description": "מחשבון שעות זמניות בהלכה היהודית - חישוב אורך שעה זמנית ביום ובלילה והמרה לשעון רגיל לפי מיקום ותאריך",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
