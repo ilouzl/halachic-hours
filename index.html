@@ -9,6 +9,21 @@
     <meta property="og:description" content="מחשבון שעות זמניות בהלכה היהודית - חישוב אורך שעה זמנית ביום ובלילה והמרה לשעון רגיל לפי מיקום ותאריך" />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
+    <!-- Cloudflare Web Analytics, first-party, on the counter shared with
+         kehilat-leshem.org (filter by hostname in the dashboard). /insights.js
+         proxies the beacon script and /insights/collect forwards the report, so
+         blocklists that cover cloudflareinsights.com do not break measurement.
+         Production hostname only: preview deployments do not pollute the
+         counter. Token is public (visible in any measured page). -->
+    <script>
+      if (location.hostname === 'zmaniot.kehilat-leshem.org') {
+        var waBeacon = document.createElement('script');
+        waBeacon.defer = true;
+        waBeacon.src = '/insights.js';
+        waBeacon.dataset.cfBeacon = '{"token":"394249e1ec744d0280ff408489510ffd","spa":true,"send":{"to":"/insights/collect"}}';
+        document.head.appendChild(waBeacon);
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&family=Frank+Ruhl+Libre:wght@500;700&display=swap" rel="stylesheet">
